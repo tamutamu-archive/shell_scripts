@@ -1,3 +1,4 @@
+111111111
 ### common var
 CUR=$(cd $(dirname $0); pwd)
 CUR_DATE=`date '+%Y%m%d'`
