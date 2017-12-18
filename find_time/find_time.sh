@@ -1,10 +1,11 @@
 #!/bin/bash
+set -euo pipefail
 
 . ../common/common.sh
 . ./usage.sh
 
-declare -r target_path=$1
-declare -r old_time=$2
+declare -r _target_path=$1
+declare -r _old_time=$2
 
 
 local:echo_file_path_timestamp(){
@@ -13,5 +14,5 @@ local:echo_file_path_timestamp(){
 export -f local:echo_file_path_timestamp
 
 
-find ${target_path} -type f -mtime ${old_time} | xargs -I{} bash -c "local:echo_file_path_timestamp {}"
+find ${_target_path} -type f -mtime ${_old_time} | xargs -I{} bash -c "local:echo_file_path_timestamp {}"
 
