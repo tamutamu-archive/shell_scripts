@@ -6,15 +6,15 @@ function usage {
   common:cecho "    $(basename ${0}) <find path> <mtime>"
   echo
   common:cecho $yellow "      <find_path>"
-  common:cecho "           "
+  common:cecho "                directory path of find."
   echo
   common:cecho $yellow "      <mtime>"
-  common:cecho "           "
+  common:cecho "                time of file or directory."
   echo
   common:cecho $green "  Example:"
-  common:cecho "    ./$(basename ${0}) /temp/test -3  #from 3day ago to current."
+  common:cecho "    ./$(basename ${0}) /temp/test -3  #from 3days ago to current."
   common:cecho "    ./$(basename ${0}) /temp/test 3   #3days ago all day."
-  common:cecho "    ./$(basename ${0}) /temp/test +3  #older than [3] ."
+  common:cecho "    ./$(basename ${0}) /temp/test +3  #older than 3days."
   echo
   common:cecho $green "  Options:"
   common:cecho "    --help, -h    print this."

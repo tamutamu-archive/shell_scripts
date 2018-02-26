@@ -1,8 +1,10 @@
 #!/bin/bash
-set -euo pipefail
 
 . ../common/common.sh
 . ./usage.sh
+
+
+set -euo pipefail
 
 declare -r _target_path=$1
 declare -r _old_time=$2
